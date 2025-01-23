@@ -1,0 +1,208 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Leonardo Meireles} \\ \vspace{1pt}
+    \small +55 (85) 98992-4491 $|$ \href{mailto:leomeireles55@outlook.com}{\underline{leomeireles55@outlook.com}} $|$ 
+    \href{https://br.linkedin.com/in/leomeireles55}{\underline{linkedin.com/in/leomeireles55}} $|$
+    \href{https://github.com/LeonardoMeireles55}{\underline{github.com/LeonardoMeireles55}}
+\end{center}
+
+%-----------SUMMARY-----------
+\section{Summary}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+    Software developer with experience in back-end development using Spring Boot, NestJS, and Express.js. Proficient with Docker, Git, and database migrations. Experienced in deploying and maintaining applications on Ubuntu Server. Front-end development skills include Next.js/React and Tailwind CSS.
+    }}
+\end{itemize}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Fortaleza}{Fortaleza, Brazil}
+      {Technology Degree in Systems Analysis and Development}{2025}
+    \resumeSubheading
+      {Digital College}{Fortaleza, Brazil}
+      {Full-Stack Web Developer}{2024}
+    \resumeSubheading
+      {University of Fortaleza}{Fortaleza, Brazil}
+      {Bachelor's Degree in Pharmacy}{2019}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Software Developer}{Jan 2023 -- Present}
+      {Marketing Support Application}{Fortaleza, Brazil}
+      \resumeItemListStart
+        \resumeItem{Developed full-stack marketing automation platform with reporting and campaign management}
+        \resumeItem{Implemented business intelligence dashboard and automated email delivery system}
+        \resumeItem{Generated automatic indicators and scheduled mass email delivery systems}
+        \resumeItem{Technologies: Node.js, Express.js, TypeScript, PostgreSQL, n8n, Ubuntu, Nginx}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {LabGraph System}{Jan 2023 -- Present}
+      {API REST \& Front-end Development}{Fortaleza, Brazil}
+      \resumeItemListStart
+        \resumeItem{Implemented Flyway database migrations and HL7 JSON parser for automated interfaces}
+        \resumeItem{Developed Westgard multi-rules validation system with real-time alerts}
+        \resumeItem{Created dynamic Levey-Jennings charts and implemented responsive UI with dark/light mode}
+        \resumeItem{Implemented CI/CD pipeline using Github actions and Docker hub}
+        \resumeItem{Technologies: Spring Boot, MariaDB, Next.js, Docker, Ubuntu, Nginx}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Lab Serum Bank} $|$ \emph{NestJS, PostgreSQL, TypeORM, Nginx}}{}
+          \resumeItemListStart
+            \resumeItem{Built system for managing and processing serum samples in database}
+            \resumeItem{Implemented comprehensive CRUD operations and sample tracking}
+          \resumeItemListEnd
+      
+      \resumeProjectHeading
+          {\textbf{Proposal App} $|$ \emph{Spring Boot, RabbitMQ, PostgreSQL, Docker}}{}
+          \resumeItemListStart
+            \resumeItem{Developed proposal management application using microservices architecture}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Open Source Contributions}}{}
+          \resumeItemListStart
+            \resumeItem{Contributed to Hibernate ORM documentation}
+            \resumeItem{Created Data Structures and Algorithms repository in Java}
+            \resumeItem{Developed E-commerce platform using Next.js and TypeScript}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming}{: Java, TypeScript, JavaScript, C} \\
+     \textbf{Databases}{: PostgreSQL, MySQL, MariaDB} \\
+     \textbf{Technologies}{: Git, Docker, Ubuntu Server, Nginx, REST API, CI/CD} \\
+     \textbf{Frameworks}{: Spring Boot, NestJS, Express.js, Next.js/React, Tailwind CSS} \\
+     \textbf{Development}{: Microservices, Clean Code, SOLID, Design Patterns, TDD} \\
+     \textbf{Methodologies}{: Agile, Scrum, Full Stack, Cloud Computing}
+    }}
+ \end{itemize}
+
+\section{Languages}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Portuguese}{: Native} \\
+     \textbf{English}{: Intermediate}
+    }}
+ \end{itemize}
+
+\end{document}
